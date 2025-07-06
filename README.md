@@ -8,9 +8,7 @@
 
 ---
 
-## 📸 Preview
 
-![Preview Screenshot](images/amazon-clone-preview.png)
 
 ---
 
@@ -28,9 +26,6 @@ It replicates the **layout, style, and design** elements using only `HTML`, `CSS
 - ✅ Amazon-style top navbar with dropdown menus  
 - ✅ Responsive search bar with category selector  
 - ✅ Interactive sidebar (like Amazon’s “All” menu)  
-- ✅ Product sections: horizontal scrolls and 4-card grids  
-- ✅ Complete multi-section footer  
-- ✅ Mobile-responsive (WIP)  
 - ✅ Pure HTML + CSS with vanilla JavaScript for interactivity
 
 ---
@@ -51,8 +46,7 @@ It replicates the **layout, style, and design** elements using only `HTML`, `CSS
 
 - How to structure semantic HTML for large layouts  
 - Styling with Flexbox and positioning  
-- Creating dropdowns, overlays, and sidebars  
-- Using vanilla JS for DOM interactivity  
+- Creating dropdowns, overlays, and sidebars   
 - Planning and building a full frontend clone step-by-step
 
 ---
@@ -61,9 +55,16 @@ It replicates the **layout, style, and design** elements using only `HTML`, `CSS
 
 - Inspired by the real [Amazon.in](https://www.amazon.in/) UI  
 - Built with ❤️ by me during my frontend learning journey  
-- Mentorship and guidance: ChatGPT 😄
+
 
 ---
 
 ## 📁 Folder Structure
+
+project-folder/
+│
+├── index.html
+├── style.css
+├── script.js
+├── images
 
