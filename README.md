@@ -6,7 +6,7 @@
 
 > A beginner-friendly **Amazon UI clone** built with HTML and CSS as part of my frontend web development journey.
 
----
+
 
 
 
