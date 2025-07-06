@@ -59,12 +59,5 @@ It replicates the **layout, style, and design** elements using only `HTML`, `CSS
 
 ---
 
-## 📁 Folder Structure
 
-project-folder/
-│
-├── index.html
-├── style.css
-├── script.js
-├── images
 
