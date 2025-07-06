@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="images/icons8-amazon-32.png">
+    
+</head>
+<body>
+  <header class="amazon-navbar ">
+    <!-- Logo -->
+    <div class="nav-section nav-logo border-white">
+      <img src="images/amazon_logo.png" alt="Amazon Logo"  width="150"/>
+    </div>
+
+    <!-- Location -->
+    <div class="nav-section nav-location border-white">
+      <img src="images/location_icon.png" alt="Location Icon" />
+      <div class="location-text">
+        <span class="small">Deliver to</span>
+        <span class="bold">India</span>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="nav-section nav-search">
+      <select class="search-select">
+        <option selected>All</option>
+        <option>All Departments</option>
+        <option>Arts & Crafts</option>
+        <option>Automotive</option>
+        <option>Beauty & Personal Care</option>
+        <option>Books</option>
+        <option>Computers</option>
+        <option>Deals</option>
+        <option>Digital Music</option>
+        <option>Electronics</option>
+        <option>Home & Kitchen</option>
+        <option>Movies & TV</option>
+        <option>Pet Supplies</option>
+        <option>Prime Video</option>
+        <option>Software</option>
+        <option>Sports & Outdoors</option>
+        <option>Toys & Games</option>
+        <option>Video Games</option>
+        <option>Women's Fashion</option>
+        
+      </select>
+      <input type="text" class="search-input" placeholder="Search Amazon" />
+      <button class="search-button">
+        <img src="images/search_icon.png" alt="Search"  />
+      </button>
+    </div>
+
+    <!-- Language -->
+    <div class="nav-section nav-lang border-white">
+      <img src="images/indiaflag.png" alt="Flag" />
+      <span>EN</span>
+    </div>
+
+    <!-- Account -->
+    <div class="nav-section nav-account border-white">
+      <div class="nav-text">
+        <span class="small">Hello, sign in</span>
+        <span class="bold">Account & Lists</span>
+      </div>
+    </div>
+
+    <!-- Orders -->
+    <div class="nav-section nav-orders border-white">
+      <div class="nav-text">
+        <span class="small">Returns</span>
+        <span class="bold">& Orders</span>
+      </div>
+    </div>
+    <!-- Cart -->
+    <div class="nav-section nav-cart border-white">
+      
+      <img src="images/cart_icon.png" alt="Cart" />
+      <span class="bold">Cart</span>
+      <span class="cart-count">0</span>
+    </div>
+
+    
+    
+
+  </header>
+
+  <!-- Bottom / Sub Navigation -->
+  <nav class="sub-navbar ">
+      <div class="sub-nav-item border-white" id="all-menu-toggle">
+        <img src="images/menu_icon.png" alt="Menu Icon" />
+        <span>All</span>
+      </div>
+      <div class="sub-nav-item border-white">Today's Deals</div>
+      <div class="sub-nav-item border-white">Customer Service</div>
+      <div class="sub-nav-item border-white">Registry</div>
+      <div class="sub-nav-item border-white">Gift Cards</div>
+      <div class="sub-nav-item border-white">Sell</div>
+   </nav>
+
+   <!-- Sidebar Menu -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<div class="sidebar-menu" id="sidebar-menu">
+  <div class="sidebar-header">
+    <span>Hello, sign in</span>
+    <button class="close-sidebar" id="close-sidebar">&times;</button>
+  </div>
+  <div class="sidebar-section">
+    <h4>Digital Content & Devices</h4>
+    <ul>
+      <li>Prime Video</li>
+      <li>Amazon Music</li>
+      <li>Kindle E-readers & Books</li>
+      <li>Amazon Appstore</li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <h4>Shop by Department</h4>
+    <ul>
+      <li>Electronics</li>
+      <li>Computers</li>
+      <li>Smart Home</li>
+      <li>Arts & Crafts</li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <h4>Programs & Features</h4>
+    <ul>
+      <li>Gift Cards</li>
+      <li>Shop By Interest</li>
+      <li>Amazon Live</li>
+      <li>International Shopping</li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <h4>Help & Settings</h4>
+    <ul>
+      <li>Your Account</li>
+      <li>English</li>
+      <li>United States</li>
+      <li>Customer Service</li>
+      <li>Sign In</li>
+    </ul>
+  </div>
+</div>
+
+
+  <!-- Header slider-->
+   <div class="header-slider">
+
+    <button class="scroll-btn left" id="header-prev">‹</button>
+    <button class="scroll-btn right" id="header-next">›</button>
+    
+
+    <div class="header-track">
+      <img src="images/header1.jpg" class="header-image">
+      <img src="images/si4.jpg" class="header-image">
+      <img src="images/header3.jpg" class="header-image">
+      <img src="images/header4.jpg" class="header-image">
+      <img src="images/header5.jpg" class="header-image">
+      <img src="images/header6.jpg" class="header-image">
+    </div>
+   </div>
+
+   <!-- Main Content -->
+    <!--category grid-->
+    <main class="main-content">
+      <section class="category-grid">
+        <div class="category-card">
+          <h3>Deals related to items you've saved</h3>
+          <img src="images/4card-headphone.png" alt="JBL Earphones">
+          <a href="#">See all deals</a>
+         </div>
+        <div class="category-card">
+          <h3>Deals revealed | Prime Day</h3>
+          <img src="images/4card-prime.png" alt="Prime Day">
+          <a href="#">See all offers</a>
+        </div>
+        <div class="category-card">
+          <h3>Revamp your home in style</h3>
+          <div class="card-grid">
+          <img src="images/home 1.jpg" >
+          <img src="images/home 2.jpg" >
+          <img src="images/home 3.jpg" >
+          <img src="images/home 5.jpg" >
+        </div>
+          <a href="#">Explore all</a>
+        </div>
+        <div class="category-card">
+          <h3>Top accessories for gaming</h3>
+         <div class="card-grid">
+            <img src="images/ga1.jpg" >
+            <img src="images/ga3.jpg" >
+            <img src="images/box1-4.jpg" >
+            <img src="images/pc7.jpg" >
+          </div>
+        <a href="#">See all offers</a>
+        </div>
+      </section>
+
+<!-- Product Scroller 1-->
+
+      <section class="product-scroller">
+       <h2>You might also like</h2>
+        <div class="scroll-container">
+          <div class="product-card">
+            <img src="images/pc2.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/pc3.jpg" >
+          </div>
+          <div class="product-card">
+           <img src="images/pc4.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/sc2.jpg" >
+          </div>
+           <div class="product-card">
+            <img src="images/pinter13.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/pc9.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/pc5.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/pc6.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/pc7.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/watch.jpg" >
+          </div>
+        </div>
+ 
+      
+      </section>
+
+      <!--4 card grid 1-->
+      <section class="four-card-grid">
+        <div class="card">
+          <h3>Hot deals</h3>
+        <img src="images/box1-3.jpg" />
+          
+        </div>
+        <div class="card">
+          <h3>Best Sellers</h3>
+          <img src="images/box2-4.jpg" />
+         
+        </div>
+        <div class="card">
+          <h3>Trending product</h3>
+          <img src="images/box3-1.jpg" />
+          
+        </div>
+        <div class="card">
+          <h3>Top picks for you</h3>
+          <img src="images/box2-1.jpg" />
+          
+        </div>
+      </section>
+
+
+
+      <!-- Product Scroller 2-->
+
+      <section class="product-scroller">
+       <h2>Best Sellers in Clothing & Accessories</h2>
+        <div class="scroll-container">
+          <div class="product-card">
+            <img src="images/cloth 1.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/cm1.jpg">
+          </div>
+          <div class="product-card">
+           <img src="images/cloth 3.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/cm2.jpg" >
+          </div>
+           <div class="product-card">
+            <img src="images/cm3.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/cloth 6.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/cloth 7.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/cloth 8.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/cloth 9.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/cloth10.jpg" >
+          </div>
+        </div>
+      </section>
+
+      <!--4 card grid 2-->
+      <section class="four-card-grid">
+        <div class="card">
+          <h3>Customers’ Most-Loved products</h3>
+        <img src="images/box3-4.jpg" />
+        
+        </div>
+        <div class="card">
+          <h3>Best Sellers</h3>
+          <img src="images/box1-4.jpg" />
+          
+        </div>
+        <div class="card">
+          <h3>Prime picks </h3>
+          <img src="images/electronics.jpg" />
+          
+        </div>
+        <div class="card">
+          <h3>Top picks </h3>
+          <img src="images/shop valentine's.jpg" />
+          
+        </div>
+      </section>
+      <!-- Product Scroller 3-->
+
+      <section class="product-scroller">
+       <h2>Best Sellers in Sports, Fitness & Outdoors</h2>
+        <div class="scroll-container">
+          <div class="product-card">
+            <img src="images/fit 1.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/fit 2.jpg" >
+          </div>
+          <div class="product-card">
+           <img src="images/fit 3.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/fit 4.jpg" >
+          </div>
+           <div class="product-card">
+            <img src="images/fit 5.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/fit 6.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/fit 7.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/fit 8.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/fit 9.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/fit 10.jpg" >
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Scroller 4-->
+
+      <section class="product-scroller">
+       <h2>Best Sellers in Beauty</h2>
+        <div class="scroll-container">
+          <div class="product-card">
+            <img src="images/beauty 1.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/beauty 2.jpg" >
+          </div>
+          <div class="product-card">
+           <img src="images/beauty 3.jpg">
+          </div>
+          <div class="product-card">
+            <img src="images/pb4.jpg">
+          </div>
+           <div class="product-card">
+            <img src="images/pb3.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/pb1.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/beauty 7.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/beauty 8.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/beauty 9.jpg">
+          </div>
+          <div class="product-card">
+            <img src="images/beauty 10.jpg">
+          </div>
+        </div>
+      </section>
+      <!-- Product Scroller 5-->
+
+      <section class="product-scroller">
+       <h2>Up to 60% off | Trending products from Emerging Businesses
+</h2>
+        <div class="scroll-container">
+          <div class="product-card">
+            <img src="images/t1.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/t2.jpg" >
+          </div>
+          <div class="product-card">
+           <img src="images/t3.jpg" >
+          </div>
+          <div class="product-card">
+            <img src="images/b1.jpg" alt="Laptop 4">
+          </div>
+           <div class="product-card">
+            <img src="images/pc10.jpg" alt="Laptop 5">
+          </div>
+          <div class="product-card">
+            <img src="images/gm2.jpg" alt="Laptop 6">
+          </div>
+          <div class="product-card">
+            <img src="images/amazon basics.jpg" alt="Laptop 6">
+          </div>
+          <div class="product-card">
+            <img src="images/electronics.jpg" alt="Laptop 6">
+          </div>
+          <div class="product-card">
+            <img src="images/pc7.jpg" alt="Laptop 6">
+          </div>
+          <div class="product-card">
+            <img src="images/watch.jpg" alt="Laptop 6">
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <!--footer-->
+
+    <!-- Back to Top -->
+    <div class="footer-backtotop">Back to top</div>
+
+    <!-- Main Footer Links Section -->
+    <footer class="footer">
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Get to Know Us</h4>
+          <ul>
+            <li>About Amazon</li>
+            <li>Careers</li>
+            <li>Press Releases</li>
+            <li>Amazon Science</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Connect with Us</h4>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Make Money with Us</h4>
+          <ul>
+            <li>Sell on Amazon</li>
+            <li>Amazon Global Selling</li>
+            <li>Become an Affiliate</li>
+            <li>Fulfilment by Amazon</li>
+            <li>Advertise Your Products</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Let Us Help You</h4>
+          <ul>
+            <li>Your Account</li>
+            <li>Returns Centre</li>
+            <li>100% Purchase Protection</li>
+            <li>Help</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Logo and Language/Country -->
+      <div class="footer-bottom">
+        <img src="images/logo.png" alt="Amazon Logo" class="footer-logo">
+        <div class="footer-options">
+           <button class="footer-btn">
+            <span class="globe-icon">🌐</span>
+            English
+            <span class="chevron-icon">▾</span> <!-- Down icon -->
+          </button>
+           <button class="footer-btn">
+            <img src="images/indiaflag.png" class="flag-icon" alt="India Flag" />
+            India
+          </button>
+        </div>
+      </div>
+
+      <!-- Services Section -->
+      <div class="footer-services">
+        <ul>
+          <li><strong>AbeBooks</strong><br>Books, art & collectibles</li>
+          <li><strong>Amazon Web Services</strong><br>Scalable Cloud Computing Services</li>
+          <li><strong>Audible</strong><br>Download Audio Books</li>
+          <li><strong>IMDb</strong><br>Movies, TV & Celebrities</li>
+          <li><strong>Shopbop</strong><br>Designer Fashion Brands</li>
+        </ul>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copy">
+        Conditions of Use & Sale | Privacy Notice | Interest-Based Ads <br>
+        © 1996-2025, Amazon.com, Inc. or its affiliates
+      </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>   
+</body>
+</html>
