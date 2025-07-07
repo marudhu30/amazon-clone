@@ -26,7 +26,7 @@ It replicates the **layout, style, and design** elements using only `HTML`, `CSS
 - ✅ Amazon-style top navbar with dropdown menus  
 - ✅ Responsive search bar with category selector  
 - ✅ Interactive sidebar (like Amazon’s “All” menu)  
-- ✅ Pure HTML + CSS with vanilla JavaScript for interactivity
+- ✅ Pure HTML + CSS with JavaScript for interactivity
 
 ---
 
